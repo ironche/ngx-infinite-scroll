@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+infinite-scroll {
+  padding: 20px;
+  height: 350px;
+  overflow: auto;
+  box-sizing: border-box;
+  background-color: lavender;
+}
+
+p {
+  padding: 20px;
+}

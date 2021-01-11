@@ -1,0 +1,9 @@
+<ul #scrollable id="scrollable">
+  <li #sentinelItem id="sentinel"></li>
+  <li #scrollItem *ngFor="let item of data">
+    <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item }"></ng-container>
+  </li>
+  <li *ngIf="showLoading">
+    <ng-container *ngTemplateOutlet="loadingTemplate"></ng-container>
+  </li>
+</ul>
