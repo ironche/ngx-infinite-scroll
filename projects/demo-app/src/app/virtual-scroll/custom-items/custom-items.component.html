@@ -1,0 +1,18 @@
+<virtual-scroll
+  [data]="data"
+  [rowHeight]="112"
+>
+  <ng-template #virtualScrollItem let-item>
+    <mat-card class="card-item">
+      <mat-card-header>
+        <mat-icon mat-card-avatar>{{ item.image }}</mat-icon>
+        <mat-card-title>{{ item.name }}</mat-card-title>
+        <mat-card-subtitle>{{ item.description }}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </ng-template>
+</virtual-scroll>
+
+<p class="explanation">
+  Total item count: {{ dataCounter }}<br><br>
+</p>

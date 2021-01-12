@@ -18,9 +18,8 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "@ngx-infinite-scroll/*": [
-        "projects/ngx-infinite-scroll/src/lib/*"
-      ]
+      "@ngx-infinite-scroll/*": ["projects/ngx-infinite-scroll/src/lib/*"],
+      "@ngx-virtual-scroll/*": ["projects/ngx-virtual-scroll/src/lib/*"]
     }
   }
 }

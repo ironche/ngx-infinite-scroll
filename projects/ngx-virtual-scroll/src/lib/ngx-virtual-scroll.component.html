@@ -1,0 +1,7 @@
+<div #scrollable id="scrollable" [ngStyle]="{ 'height.px': totalScrollableHeight }">
+  <div [ngStyle]="{ 'transform': 'translateY(' + scrollableOffset + 'px)' }">
+    <div *ngFor="let item of renderedData">
+      <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item }"></ng-container>
+    </div>
+  </div>
+</div>

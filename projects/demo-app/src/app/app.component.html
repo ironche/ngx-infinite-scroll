@@ -1,13 +1,29 @@
 <mat-toolbar color="primary">
-  <span>ngx-infinite-scroll demo application</span>
+  <span>ngx-scroll demo application</span>
 </mat-toolbar>
 
 <mat-tab-group dynamicHeight mat-align-tabs="start">
-  <mat-tab label="Custom templates">
-    <infs-custom-items></infs-custom-items>
+  <mat-tab label="Virtual scroll - Custom items">
+    <ng-template matTabContent>
+      <vscr-custom-items></vscr-custom-items>
+    </ng-template>
   </mat-tab>
 
-  <mat-tab label="Text items">
-    <infs-text-items></infs-text-items>
+  <mat-tab label="Virtual scroll - Text items">
+    <ng-template matTabContent>
+      <vscr-text-items></vscr-text-items>
+    </ng-template>
+  </mat-tab>
+
+  <mat-tab label="Infinite scroll - Custom items">
+    <ng-template matTabContent>
+      <infs-custom-items></infs-custom-items>
+    </ng-template>
+  </mat-tab>
+
+  <mat-tab label="Infinite scroll - Text items">
+    <ng-template matTabContent>
+      <infs-text-items></infs-text-items>
+    </ng-template>
   </mat-tab>
 </mat-tab-group>

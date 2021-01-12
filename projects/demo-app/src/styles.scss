@@ -3,6 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+virtual-scroll,
 infinite-scroll {
   padding: 20px;
   height: 350px;
@@ -11,6 +12,6 @@ infinite-scroll {
   background-color: lavender;
 }
 
-p {
+.explanation {
   padding: 20px;
 }

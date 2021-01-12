@@ -6,7 +6,7 @@
   <ng-template #infiniteScrollItem let-item>
     <mat-card class="card-item">
       <mat-card-header>
-        <mat-icon  mat-card-avatar>{{ item.image }}</mat-icon>
+        <mat-icon mat-card-avatar>{{ item.image }}</mat-icon>
         <mat-card-title>{{ item.name }}</mat-card-title>
         <mat-card-subtitle>{{ item.description }}</mat-card-subtitle>
       </mat-card-header>
@@ -19,7 +19,8 @@
     </div>
   </ng-template>
 </infinite-scroll>
-<p>
+
+<p class="explanation">
   Item count: {{ dataCounter }} <br><br>
   Load items in increment of 100 after delay of 2000ms when the end of list is reached
 </p>

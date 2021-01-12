@@ -1,0 +1,12 @@
+<virtual-scroll
+  [data]="data"
+  [rowHeight]="20"
+>
+  <ng-template #virtualScrollItem let-item>
+    {{ item }}
+  </ng-template>
+</virtual-scroll>
+
+<p class="explanation">
+  Total item count: {{ dataCounter }}<br><br>
+</p>

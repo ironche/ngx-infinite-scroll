@@ -15,7 +15,7 @@
       },
       "root": "projects/demo-app",
       "sourceRoot": "projects/demo-app/src",
-      "prefix": "infs",
+      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -112,6 +112,26 @@
           "configurations": {
             "production": {
               "tsConfig": "projects/ngx-infinite-scroll/tsconfig.lib.prod.json"
+            }
+          }
+        }
+      }
+    },
+    "ngx-virtual-scroll": {
+      "projectType": "library",
+      "root": "projects/ngx-virtual-scroll",
+      "sourceRoot": "projects/ngx-virtual-scroll/src",
+      "prefix": "vscr",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ngx-virtual-scroll/tsconfig.lib.json",
+            "project": "projects/ngx-virtual-scroll/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-virtual-scroll/tsconfig.lib.prod.json"
             }
           }
         }
